@@ -27,3 +27,17 @@ body {
   height: 300px;
   width: 375px;
 }
+
+.header h1 {
+  text-align: center;
+  padding-top: 30px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.search {
+  width: 327px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
