@@ -39,9 +39,20 @@ body {
 .search {
   display: flex;
   justify-content: center;
-  gap: 0;
   align-items: center;
   width: 327px;
   margin: 0 auto;
   padding-top: 30px;
+}
+
+.search input {
+  width: 269px;
+  height: 58px;
+  border-radius: 10px;
+}
+
+.search button {
+  width: 58px;
+  height: 58px;
+  background-color:#000;
 }
