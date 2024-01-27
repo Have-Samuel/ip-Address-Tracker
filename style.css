@@ -43,6 +43,8 @@ body {
   width: 327px;
   margin: 0 auto;
   padding-top: 30px;
+  border: none;
+  border-radius: 10px;
 }
 
 .search input {
@@ -52,7 +54,9 @@ body {
 }
 
 .search button {
+  z-index: 1;
   width: 58px;
   height: 58px;
   background-color:#000;
+  margin-left: -2rem;
 }
