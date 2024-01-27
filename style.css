@@ -58,11 +58,22 @@ body {
 }
 
 .search button {
-  /* z-index: 1; */
   width: 58px;
   height: 58px;
   background-color:#000;
   margin-left: -2rem;
   border-radius: 0 10px 10px 0;
   border: none;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 327px;
+  height: 294px;
+  margin: 0 auto;
+  margin-top: 30px;
 }
