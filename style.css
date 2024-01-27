@@ -80,3 +80,10 @@ body {
   background-color: #fff;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
+
+.attribution {
+  text-align: center;
+  font-size: 11px;
+  color: hsl(228, 45%, 44%);
+  margin-top: 40rem;
+}
