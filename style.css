@@ -13,10 +13,10 @@ body {
 }
 
 .container {
-  width: 375px;
+  width: 385px;
   background: #fff;
-  /* margin: 0 auto; */
-  /* border: 5px solid red; */
+  margin: 0 auto;
+  border: 5px solid red;
 }
 
 .header {
