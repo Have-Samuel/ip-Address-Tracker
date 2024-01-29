@@ -145,8 +145,13 @@ body {
   }
 
   .info {
-    width: 700px;
-    height: 294px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1100px;
+    height: 161px;
+    gap: 1rem;
   }
 
   .info h2 {
@@ -160,8 +165,8 @@ body {
   .info p {
     width: 270px;
     text-align: center;
-    font-size: 0.7rem;
-    color: #a09d9d;
+    font-size: 1.5rem;
+    color: #1d1c1c;
     line-height: 1.5;
   
   }
