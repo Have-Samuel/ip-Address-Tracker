@@ -143,8 +143,9 @@ body {
   .info h2 {
     width: 270px;
     text-align: center;
-    font-size: 1.5rem;
-    color: #2c2c2c;
+    font-size: 0.7rem;
+    color: #a09d9d;
+    line-height: 1;
   }
 
   .attribution {
