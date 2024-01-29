@@ -89,6 +89,15 @@ body {
   color: #2c2c2c;
 }
 
+.info p {
+  width: 270px;
+  text-align: center;
+  font-size: 0.7rem;
+  color: #a09d9d;
+  line-height: 1.5;
+
+}
+
 .attribution {
   text-align: center;
   font-size: 11px;
