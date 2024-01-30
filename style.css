@@ -104,14 +104,6 @@ span {
   margin-bottom: 1.2rem;
 }
 
-span {
-  height: 3rem;
-  border: 1px solid #e0dede;
-  margin-top: 1.5rem;
-  margin-left: -1rem;
-  margin-right: -1rem;
-}
-
 .attribution {
   text-align: center;
   font-size: 11px;
@@ -190,7 +182,15 @@ span {
     font-size: 1.5rem;
     color: #1d1c1c;
     line-height: 1.5;
-  
+  }
+
+  span {
+    display: block;
+    height: 3rem;
+    border: 1px solid #e0dede;
+    margin-top: -1.5rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
   }
 
   .attribution {
