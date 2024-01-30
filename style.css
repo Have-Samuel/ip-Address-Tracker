@@ -95,11 +95,18 @@ body {
   font-size: 0.7rem;
   color: #a09d9d;
   line-height: 1.5;
-
+  padding-top: 1rem;
 }
 
 hr {
-  display: none;
+  /* display: none; */
+  height: 3rem;
+  /* width: 327px; */
+  margin-left: -1rem;
+  margin-right: -1rem;
+  align-items: center;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
 }
 
 .attribution {
