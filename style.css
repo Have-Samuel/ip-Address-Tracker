@@ -16,7 +16,9 @@ body {
   width: 385px;
   background: #fff;
   margin: 0 auto;
-  border: 5px solid red;
+  /* border: 5px solid red; */
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .header {
