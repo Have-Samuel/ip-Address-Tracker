@@ -39,7 +39,6 @@ body {
 
 .search {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   width: 327px;
   margin: 0 auto;
