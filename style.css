@@ -65,6 +65,7 @@ body {
   margin-left: -2rem;
   border-radius: 0 10px 10px 0;
   border: none;
+  outline: none;
 }
 
 .info {
@@ -155,6 +156,7 @@ span {
     border-radius: 0 10px 10px 0;
     border: none;
     cursor: pointer;
+    outline: none;
   }
 
  .search button:hover {
