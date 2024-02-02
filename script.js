@@ -6,7 +6,7 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   const inputValue = input.value;
 
-
+  
 });
 
 // Display of the Ip address, location and timezone of the user
