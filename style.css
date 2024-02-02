@@ -83,6 +83,22 @@ body {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 327px; */
+  /* height: 294px; */
+  margin: 0 auto;
+  /* margin-top: 30px; */
+  border: 2px solid #f30909;
+  border-radius: 10px;
+  /* background-color: #f30909; */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+
+}
+
 .info h2 {
   width: 270px;
   text-align: center;
@@ -215,8 +231,9 @@ span {
     height: 294px;
     margin: 0 auto;
     margin-top: 30px;
+    border: 2px solid #f30909;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: #f30909;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
   }
 
