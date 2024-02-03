@@ -16,7 +16,7 @@ form.addEventListener("submit", (e) => {
 });
 
 // Display of the Ip address, location and timezone of the user
-  const ip = document.querySelector('.ip');
+  const ip = document.querySelector('.ip-address');
   const location = document.querySelector('.location');
   const timezone = document.querySelector('.timezone');
   const isp = document.querySelector('.isp');
