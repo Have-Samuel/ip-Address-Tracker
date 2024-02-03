@@ -134,7 +134,8 @@ span {
   }
 
   .container {
-    width: 1440px;
+    /* width: 1440px; */
+    width: 100%;
     height: 800px;
     margin: 0;
   }
@@ -142,7 +143,8 @@ span {
   .header {
     background-image: url('./images/pattern-bg-desktop.png');
     height: 280px;
-    width: 1440px;
+    /* width: 1440px; */
+    width: 100%;
   }
 
   .header h1 {
