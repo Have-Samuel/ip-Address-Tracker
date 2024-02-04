@@ -13,11 +13,10 @@ body {
 }
 
 .container {
-  width: 385px;
+  width: 375px;
   background: #fff;
-  margin: 0 auto;
-  overflow-y: hidden;
-  overflow-x: hidden;
+  margin: 1rem auto;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .header {
@@ -27,6 +26,8 @@ body {
   background-position: center;
   height: 300px;
   width: 375px;
+  z-index: 1000;
+  position: relative;
 }
 
 .header h1 {
@@ -56,6 +57,7 @@ body {
   border: none;
   padding: 0 1rem;
   outline: none;
+  font-size: 0.9rem;
 }
 
 .search button {
@@ -88,13 +90,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* width: 327px; */
-  /* height: 294px; */
   margin: 0 auto;
-  /* margin-top: 30px; */
   border: 2px solid #f30909;
   border-radius: 10px;
-  /* background-color: #f30909; */
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 
 }
@@ -112,7 +110,6 @@ span {
 }
 
 .info p {
-  /* width: 270px; */
   width: 100%;
   text-align: center;
   font-size: 1.5rem;
@@ -124,26 +121,28 @@ span {
 .attribution {
   text-align: center;
   font-size: 11px;
-  color: hsl(228, 45%, 44%);
-  margin-top: 40rem;
+}
+
+.the-map {
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
   body {
     overflow-x: hidden;
+
   }
 
   .container {
-    /* width: 1440px; */
     width: 100%;
-    height: 800px;
+    /* height: 800px; */
+    height: 100%;
     margin: 0;
   }
 
   .header {
     background-image: url('./images/pattern-bg-desktop.png');
     height: 280px;
-    /* width: 1440px; */
     width: 100%;
   }
 
@@ -190,6 +189,7 @@ span {
     width: 1100px;
     height: 161px;
     gap: 1rem;
+    z-index: 100;
   }
 
   .info h2 {
@@ -221,7 +221,7 @@ span {
     text-align: center;
     font-size: 11px;
     color: hsl(228, 45%, 44%);
-    margin-top: 32rem;
+    /* margin-top: 32rem; */
   }
 
   .error {
@@ -251,5 +251,9 @@ span {
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .the-map {
+    height: 670px
   }
 }
