@@ -125,17 +125,19 @@ span {
 
 .the-map {
   display: inline-block;
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 
 @media screen and (min-width: 768px) {
   body {
     overflow-x: hidden;
+
   }
 
   .container {
     width: 100%;
-    height: 800px;
+    /* height: 800px; */
+    height: 100%;
     margin: 0;
   }
 
@@ -220,7 +222,7 @@ span {
     text-align: center;
     font-size: 11px;
     color: hsl(228, 45%, 44%);
-    margin-top: 32rem;
+    /* margin-top: 32rem; */
   }
 
   .error {
@@ -253,7 +255,6 @@ span {
   }
 
   .the-map {
-    margin-top: -2rem;
-    border: 2px solid green;
+    height: 670px
   }
 }
