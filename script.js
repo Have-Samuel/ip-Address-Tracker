@@ -5,13 +5,11 @@ const input = document.querySelector(".input");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   const inputValue = input.value;
-  console.log(inputValue);
-  if (inputValue === "") {
-    input.classList.add("error");
-  } else {
-    input.classList.remove("error");
-  }
-  console.log(inputValue);
+  // console.log(inputValue);
+  // if (inputValue === "") {
+  //   input.classList.add("error");
+  // }
+  // console.log(inputValue);
 });
 
 // Display of the Ip address, location and timezone of the user
