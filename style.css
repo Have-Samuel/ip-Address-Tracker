@@ -190,6 +190,7 @@ span {
     width: 1100px;
     height: 161px;
     gap: 1rem;
+    z-index: 100;
   }
 
   .info h2 {
@@ -251,5 +252,10 @@ span {
     border-radius: 10px;
     background-color: #fff;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .the-map {
+    margin-top: -2rem;
+    border: 2px solid green;
   }
 }
