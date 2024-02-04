@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-  width: 385px;
+  width: 375px;
   background: #fff;
   margin: 0 auto;
   overflow-y: hidden;
@@ -27,6 +27,8 @@ body {
   background-position: center;
   height: 300px;
   width: 375px;
+  z-index: 1000;
+  position: relative;
 }
 
 .header h1 {
@@ -89,10 +91,8 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  /* margin-top: 30px; */
   border: 2px solid #f30909;
   border-radius: 10px;
-  /* background-color: #f30909; */
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 
 }
@@ -110,7 +110,6 @@ span {
 }
 
 .info p {
-  /* width: 270px; */
   width: 100%;
   text-align: center;
   font-size: 1.5rem;
@@ -122,14 +121,11 @@ span {
 .attribution {
   text-align: center;
   font-size: 11px;
-  color: hsl(228, 45%, 44%);
-  margin-top: 40rem;
 }
 
 .the-map {
   display: inline-block;
   border: 2px solid green;
-  z-index: -100;
 }
 
 @media screen and (min-width: 768px) {
@@ -138,7 +134,6 @@ span {
   }
 
   .container {
-    /* width: 1440px; */
     width: 100%;
     height: 800px;
     margin: 0;
@@ -147,7 +142,6 @@ span {
   .header {
     background-image: url('./images/pattern-bg-desktop.png');
     height: 280px;
-    /* width: 1440px; */
     width: 100%;
   }
 
