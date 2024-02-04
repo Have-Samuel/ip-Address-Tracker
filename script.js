@@ -8,7 +8,10 @@ form.addEventListener("submit", (e) => {
   console.log(inputValue);
   if (inputValue === "") {
     input.classList.add("error");
+  } else {
+    input.classList.remove("error");
   }
+  console.log(inputValue);
 });
 
 // Display of the Ip address, location and timezone of the user
