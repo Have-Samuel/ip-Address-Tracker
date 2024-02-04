@@ -15,9 +15,8 @@ body {
 .container {
   width: 375px;
   background: #fff;
-  margin: 0 auto;
-  overflow-y: hidden;
-  overflow-x: hidden;
+  margin: 1rem auto;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .header {
@@ -58,6 +57,7 @@ body {
   border: none;
   padding: 0 1rem;
   outline: none;
+  font-size: 0.9rem;
 }
 
 .search button {
