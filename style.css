@@ -186,8 +186,10 @@ span {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 1100px;
-    height: 161px;
+    min-width: 80%;
+    max-height: 161px;
+    margin-left: auto;
+    margin-right: auto;
     gap: 1rem;
     z-index: 100;
   }
