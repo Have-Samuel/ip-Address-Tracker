@@ -9,7 +9,7 @@ const input = document.querySelector(".input");
 
 // Display of the Ip address, location and timezone of the user
   const current_ip = document.querySelector('.ip-address');
-  const location = document.querySelector('.location');
+  const current_location = document.querySelector('.location');
   const timezone = document.querySelector('.timezone');
   const isp = document.querySelector('.isp');
   // const map = document.querySelector('#map');
@@ -51,8 +51,20 @@ showLocation = (default_ip) => {
   // fetch the data from the api
   fetch(ip_url)
     .then((response) => response.json())
-    .then((data) => console.log(data))
+    // display the data
+    .then((data) => {
+      current_ip.textContent = data.ip;
+      current_location.textContent = `${data.location.country}, ${data.location.region},`
+      timezone.textContent = `UTC ${data.location.timezone}`;
+      isp.textContent = data.isp;
+
+      // update the map with the user's location
+      updateLoaction([data.location.lat, data.location.lng])
+    })
     .catch((error) => console.log(error));
 }
+// call the function that shows the Ip address, location and timezone of the user
+showLocation();
 
-
+// When the page loads, the map should show the user's location
+document.addEventListener('DOMContentLoaded', updateLoaction(0, 0));
