@@ -6,22 +6,26 @@ let current_version = "v2";
 const form = document.querySelector("#form");
 const input = document.querySelector(".input");
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const inputValue = input.value;
-  // console.log(inputValue);
-  // if (inputValue === "") {
-  //   input.classList.add("error");
-  // }
-  // console.log(inputValue);
-});
-
 // Display of the Ip address, location and timezone of the user
-  const ip = document.querySelector('.ip-address');
+  const current_ip = document.querySelector('.ip-address');
   const location = document.querySelector('.location');
   const timezone = document.querySelector('.timezone');
   const isp = document.querySelector('.isp');
   const map = document.querySelector('#map');
+
+  // Form validation
+  const entered_ip = document.querySelector('.input');
+  const search_btn = document.querySelector('#search-btn');
+  
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    // console.log(inputValue);
+    // if (inputValue === "") {
+    //   input.classList.add("error");
+    // }
+    // console.log(inputValue);
+  });
 
 // using IP Geolocation API by IPify https://geo.ipify.org/
   const apiKey = 'at_D2SmDOVIsbseigGDuGmJTpMle90Da';
