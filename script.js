@@ -12,16 +12,8 @@ const input = document.querySelector(".input");
   const current_location = document.querySelector('.location');
   const timezone = document.querySelector('.timezone');
   const isp = document.querySelector('.isp');
-  // const map = document.querySelector('#map');
-
-  // Form validation
   const entered_ip = document.querySelector('.input');
   const search_btn = document.querySelector('#search-btn');
-
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-  });
 
 const map = L.map('map', {
   center: [0, 0],
@@ -61,10 +53,23 @@ showLocation = (default_ip) => {
       // update the map with the user's location
       updateLoaction([data.location.lat, data.location.lng])
     })
-    .catch((error) => console.log(error));
+    .catch((error) => console.log('Oops! Something went wrong', error));
 }
 // call the function that shows the Ip address, location and timezone of the user
 showLocation();
 
 // When the page loads, the map should show the user's location
 document.addEventListener('DOMContentLoaded', updateLoaction(0, 0));
+
+// Button to search for the location of the entered Ip address
+search_btn.addEventListener('click', (e) => {
+  e.preventDefault();
+  showLocation(entered_ip.value);
+  // if statement to check if the input is empty
+  if (entered_ip.value ==! '' && entered_ip.value ==! null) {
+    showLocation(entered_ip.value);
+    return;
+  }
+  alert('Please enter a valid IP address');
+  entered_ip.value = '';
+});
