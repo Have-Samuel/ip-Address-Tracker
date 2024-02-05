@@ -19,8 +19,6 @@ form.addEventListener("submit", (e) => {
   const isp = document.querySelector('.isp');
   const map = document.querySelector('#map');
 
-  
-// using the ipify API
-// // using IP Geolocation API by IPify https://geo.ipify.org/
-// // using LeafletJS https://leafletjs.com/
+// using IP Geolocation API by IPify https://geo.ipify.org/
+  const apiKey = 'at_9GwJ6y5hF8Zi1Q4Jg3tJfZ9o8Xy9p';
 
