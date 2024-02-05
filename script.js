@@ -48,6 +48,11 @@ showLocation = (default_ip) => {
   } else {
     let ip_url = `${api_url}${current_version}?apiKey=${apiKey}&ipAddress=${default_ip}`;
   }
+  // fetch the data from the api
+  fetch(ip_url)
+    .then((response) => response.json())
+    .then((data) => console.log(data))
+    .catch((error) => console.log(error));
 }
 
 
