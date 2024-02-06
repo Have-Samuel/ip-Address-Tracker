@@ -42,7 +42,7 @@ const showLocation = (defaultIp) => {
     .then((response) => response.json())
     // display the data
     .then((data) => {
-      currentIp.innerHTML = data.ip;
+      currentIp.innerHTML = data.defaultIp.ip;
       currentLocation.innerHTML = `${data.location.country}, ${data.location.region} ${data.location.postalCode}`;
       timeZone.innerHTML = `UTC ${data.location.timezone}`;
       isp.innerHTML = data.isp;
