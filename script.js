@@ -1,7 +1,6 @@
 // pull from different sources
 const apiUrl = 'https://geo.ipify.org/api/v2?apiKey=at_D2SmDOVIsbseigGDuGmJTpMle90Da';
 const apiKey = 'at_D2SmDOVIsbseigGDuGmJTpMle90Da';
-const currentVersion = 'v2';
 
 // Display of the Ip address, location and timezone of the user
 const currentIp = document.querySelector('.ip-address');
@@ -34,9 +33,9 @@ const updateLoaction = (lat, lng) => {
 const showLocation = (defaultIp) => {
   let ipUrl;
   if (defaultIp === undefined) {
-    ipUrl = `${apiUrl}${currentVersion}?apiKey=${apiKey}`;
+    ipUrl = `${apiUrl}?apiKey=${apiKey}`;
   } else {
-    ipUrl = `${apiUrl}${currentVersion}?apiKey=${apiKey}&ipAddress=${defaultIp}`;
+    ipUrl = `${apiUrl}?apiKey=${apiKey}&ipAddress=${defaultIp}`;
     https://geo.ipify.org/api/v2/country?apiKey=at_D2SmDOVIsbseigGDuGmJTpMle90Da&ipAddress=8.8.8.8
   }
   // fetch the data from the api
