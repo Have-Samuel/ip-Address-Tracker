@@ -24,7 +24,9 @@ const map = L.map('map', {
 
 // Makers, circles, and polygons
 
-const circle = L.circle([51.508, -0.11], {
+const marker = L.marker([0, 0]).addTo(map);
+
+const circle = L.circle([0, 0], {
   color: 'red',
   fillColor: '#f03',
   fillOpacity: 0.5,
@@ -62,6 +64,7 @@ const showLocation = (defaultIp) => {
     .catch((error) => console.log('Oops! Something went wrong', error));
 
   circle();
+  marker();
 };
 // call the function that shows the Ip address, location and timezone of the user
 showLocation();
