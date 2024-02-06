@@ -226,35 +226,6 @@ span {
     /* margin-top: 32rem; */
   }
 
-  .error {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 327px;
-    height: 294px;
-    margin: 0 auto;
-    margin-top: 30px;
-    border: 2px solid #f30909;
-    border-radius: 10px;
-    background-color: #f30909;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  }
-
-  .success {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 327px;
-    height: 294px;
-    margin: 0 auto;
-    margin-top: 30px;
-    border-radius: 10px;
-    background-color: #fff;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  }
-
   .the-map {
     width: 100%;
     height: 670px;
