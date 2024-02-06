@@ -3,10 +3,10 @@ const apiUrl = 'https://geo.ipify.org/api/v2?apiKey=at_D2SmDOVIsbseigGDuGmJTpMle
 const apiKey = 'at_D2SmDOVIsbseigGDuGmJTpMle90Da';
 
 // Display of the Ip address, location and timezone of the user
-const currentIp = document.querySelector('.ip-address');
-const currentLocation = document.querySelector('.location');
-const timeZone = document.querySelector('.timezone');
-const isp = document.querySelector('.isp');
+const currentIp = document.querySelector('#ip-address');
+const currentLocation = document.querySelector('#ip-location');
+const timeZone = document.querySelector('#ip-timezone');
+const isp = document.querySelector('#ip-isp');
 const enteredIp = document.querySelector('.input');
 const searchBtn = document.querySelector('#search-btn');
 const { L } = window;
