@@ -16,7 +16,7 @@ const map = L.map('map', {
   zoom: 0,
   layers: [
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      // maxZoom: 19,
+      maxZoom: 19,
       attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     }),
   ],
@@ -43,12 +43,12 @@ const showLocation = (defaultIp) => {
     // display the data
     .then((data) => {
       currentIp.innerHTML = data.ip;
-      currentLocation.innerHTML = `${data.location.country}, ${data.location.region} ${data.location.postalCode}`;
-      timeZone.innerHTML = `UTC ${data.location.timezone}`;
+      currentLocation.innerHTML = `${data.location}, ${data.location} ${data.location}`;
+      timeZone.innerHTML = `UTC ${data.location}`;
       isp.innerHTML = data.isp;
 
       // update the map with the user's location
-      updateLoaction([data.location.lat, data.location.lng]);
+      updateLoaction([data.location, data.location]);
     })
     .catch((error) => console.log('Oops! Something went wrong', error));
 };
