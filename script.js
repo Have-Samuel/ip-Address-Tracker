@@ -12,15 +12,24 @@ const searchBtn = document.querySelector('#search-btn');
 const { L } = window;
 
 const map = L.map('map', {
-  center: [0, 0],
-  zoom: 0,
+  center: [51.505, -0.09],
+  zoom: 13,
   layers: [
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
+      // maxZoom: 19,
       attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     }),
   ],
 });
+
+// Makers, circles, and polygons
+
+const circle = L.circle([51.508, -0.11], {
+  color: 'red',
+  fillColor: '#f03',
+  fillOpacity: 0.5,
+  radius: 500,
+}).addTo(map);
 
 // Function for the longitude and latitude when the user enters a location
 // when the page loads this function shd create a map with the user's location
@@ -48,9 +57,11 @@ const showLocation = (defaultIp) => {
       isp.innerHTML = data.isp;
 
       // update the map with the user's location
-      updateLoaction([data.location, data.location]);
+      updateLoaction([data.location.lat, data.location.lng]);
     })
     .catch((error) => console.log('Oops! Something went wrong', error));
+
+  circle();
 };
 // call the function that shows the Ip address, location and timezone of the user
 showLocation();
