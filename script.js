@@ -36,7 +36,6 @@ const showLocation = (defaultIp) => {
     ipUrl = `${apiUrl}?apiKey=${apiKey}`;
   } else {
     ipUrl = `${apiUrl}?apiKey=${apiKey}&ipAddress=${defaultIp}`;
-    https://geo.ipify.org/api/v2/country?apiKey=at_D2SmDOVIsbseigGDuGmJTpMle90Da&ipAddress=8.8.8.8
   }
   // fetch the data from the api
   fetch(ipUrl)
