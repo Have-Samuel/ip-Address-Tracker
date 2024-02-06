@@ -12,8 +12,8 @@ const searchBtn = document.querySelector('#search-btn');
 const { L } = window;
 
 const map = L.map('map', {
-  center: [0, 0],
-  zoom: 0,
+  center: [51.505, -0.09],
+  zoom: 13,
   layers: [
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       // maxZoom: 19,
@@ -21,6 +21,23 @@ const map = L.map('map', {
     }),
   ],
 });
+
+// Makers, circles, and polygons
+
+const marker = L.marker([51.5, -0.09]).addTo(map);
+
+const circle = L.circle([51.508, -0.11], {
+  color: 'red',
+  fillColor: '#f03',
+  fillOpacity: 0.5,
+  radius: 500,
+}).addTo(map);
+
+const polygon = L.polygon([
+  [51.509, -0.08],
+  [51.503, -0.06],
+  [51.51, -0.047],
+]).addTo(map);
 
 // Function for the longitude and latitude when the user enters a location
 // when the page loads this function shd create a map with the user's location
@@ -43,14 +60,18 @@ const showLocation = (defaultIp) => {
     // display the data
     .then((data) => {
       currentIp.innerHTML = data.ip;
-      currentLocation.innerHTML = `${data.location.country}, ${data.location.region} ${data.location.postalCode}`;
-      timeZone.innerHTML = `UTC ${data.location.timezone}`;
+      currentLocation.innerHTML = `${data.location}, ${data.location} ${data.location}`;
+      timeZone.innerHTML = `UTC ${data.location}`;
       isp.innerHTML = data.isp;
 
       // update the map with the user's location
       updateLoaction([data.location.lat, data.location.lng]);
     })
     .catch((error) => console.log('Oops! Something went wrong', error));
+
+  circle();
+  marker();
+  polygon();
 };
 // call the function that shows the Ip address, location and timezone of the user
 showLocation();
