@@ -59,9 +59,9 @@ const showLocation = (defaultIp) => {
     .then((response) => response.json())
     // display the data
     .then((data) => {
-      currentIp.innerHTML = parseInt(data.ip.value, 10);
-      currentLocation.innerHTML = `${data.location}, ${data.location} ${data.location}`;
-      timeZone.innerHTML = `UTC ${data.location}`;
+      currentIp.innerHTML = data.ip;
+      currentLocation.innerHTML = `${data.location.country}, ${data.location.region}`;
+      timeZone.innerHTML = `UTC ${data.location.isp}`;
       isp.innerHTML = data.isp;
 
       // update the map with the user's location
@@ -84,6 +84,24 @@ searchBtn.addEventListener('click', (e) => {
   e.preventDefault();
   showLocation(enteredIp.value);
   // if statement to check if the input is empty
+  // enteredIp should be a number
+  const isIpValid = (ip) => {
+    const ipRegex = /^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$/;
+    return ipRegex.test(ip);
+  };
+
+  if (enteredIp.value === '' || enteredIp.value === null) {
+    alert('Please enter a valid IP address');
+    enteredIp.value = '';
+    return;
+  }
+
+  if (!isIpValid(enteredIp.value)) {
+    alert('Please enter a valid IP address');
+    enteredIp.value = '';
+    return;
+  }
+
   if (enteredIp.value !== '' && enteredIp.value !== null) {
     showLocation(enteredIp.value);
     return;
