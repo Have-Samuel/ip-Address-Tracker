@@ -33,12 +33,6 @@ const circle = L.circle([51.508, -0.11], {
   radius: 500,
 }).addTo(map);
 
-const polygon = L.polygon([
-  [51.509, -0.08],
-  [51.503, -0.06],
-  [51.51, -0.047],
-]).addTo(map);
-
 // Function for the longitude and latitude when the user enters a location
 // when the page loads this function shd create a map with the user's location
 const updateLoaction = (lat, lng) => {
@@ -71,7 +65,6 @@ const showLocation = (defaultIp) => {
 
   circle();
   marker();
-  polygon();
 };
 // call the function that shows the Ip address, location and timezone of the user
 showLocation();
