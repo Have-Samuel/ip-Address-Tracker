@@ -84,8 +84,6 @@ searchBtn.addEventListener('click', (e) => {
   e.preventDefault();
   showLocation(enteredIp.value);
   // if statement to check if the input is empty
-  // enteredIp should be a number
- 
   if (enteredIp.value !== '' && enteredIp.value !== null) {
     showLocation(enteredIp.value);
     return;
