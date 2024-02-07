@@ -60,8 +60,8 @@ const showLocation = (defaultIp) => {
     // display the data
     .then((data) => {
       currentIp.innerHTML = data.ip;
-      currentLocation.innerHTML = `${data.location.country}, ${data.location.region}`;
-      timeZone.innerHTML = `UTC ${data.location.isp}`;
+      currentLocation.innerHTML = `${data.location.country} ${data.location.city} ${data.location.postalCode}`;
+      timeZone.innerHTML = `UTC ${data.location.timezone}`;
       isp.innerHTML = data.isp;
 
       // update the map with the user's location
