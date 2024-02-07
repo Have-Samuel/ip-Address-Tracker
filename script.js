@@ -22,16 +22,8 @@ const map = L.map('map', {
   ],
 });
 
-// Makers, circles, and polygons
-
+// Makers for the map
 const marker = L.marker([51.5, -0.09]).addTo(map);
-
-const circle = L.circle([51.508, -0.11], {
-  color: 'red',
-  fillColor: '#f03',
-  fillOpacity: 0.5,
-  radius: 500,
-}).addTo(map);
 
 // Function for the longitude and latitude when the user enters a location
 // when the page loads this function shd create a map with the user's location
