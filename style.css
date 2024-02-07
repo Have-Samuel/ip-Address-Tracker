@@ -213,17 +213,9 @@ span {
     display: block;
     height: 3rem;
     border: 1px solid #e0dede;
-    margin-top: -1.5rem;
+    margin-top: -0.5rem;
     margin-left: -1rem;
     margin-right: -1rem;
-  }
-
-  .attribution {
-    text-align: center;
-    font-size: 11px;
-    color: hsl(228, 45%, 44%);
-
-    /* margin-top: 32rem; */
   }
 
   .the-map {
