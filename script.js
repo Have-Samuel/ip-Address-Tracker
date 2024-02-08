@@ -28,9 +28,9 @@ const map = L.map('map', {
 
 // Function for the longitude and latitude when the user enters a location
 // when the page loads this function shd create a map with the user's location
-const updateLoaction = (lat, lng) => {
-  map.setView([lat, lng], 19);
-  L.marker([lat, lng]).addTo(map);
+const updateLoaction = (update_marker = [-42, 42]) => {
+  map.setView(update_marker, 19);
+  L.marker(update_marker).addTo(map);
 };
 
 // Function that shows the Ip address, location and timezone of the user
@@ -47,7 +47,7 @@ const showLocation = (defaultIp) => {
     // display the data
     .then((data) => {
       currentIp.innerHTML = data.ip;
-      currentLocation.innerHTML = `${data.location.country} ${data.location.city} ${data.location.postalCode}`;
+      currentLocation.innerHTML = `${data.location.country} ${data}`;
       timeZone.innerHTML = `UTC ${data.location.timezone}`;
       isp.innerHTML = data.isp;
 
