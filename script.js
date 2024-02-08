@@ -47,7 +47,7 @@ const showLocation = (defaultIp) => {
     // display the data
     .then((data) => {
       currentIp.innerHTML = data.ip;
-      currentLocation.innerHTML = `${data.location.city}, ${data.location.region}, ${data.location.postalCode}`;
+      currentLocation.innerHTML = `${data.location.city}, ${data.location.region}${data.location.postalCode}`;
       timeZone.innerHTML = `UTC ${data.location.timezone}`;
       isp.innerHTML = data.isp;
 
@@ -56,14 +56,14 @@ const showLocation = (defaultIp) => {
     })
     .catch((error) => console.log('Oops! Something went wrong', error));
 
-  // circle();
-  // marker();
+  circle();
+  marker();
 };
 // call the function that shows the Ip address, location and timezone of the user
 showLocation();
 
 // When the page loads, the map should show the user's location
-document.addEventListener('DOMContentLoaded', updateLoaction(0, 0));
+document.addEventListener('load', updateLoaction());
 
 // Button to search for the location of the entered Ip address
 searchBtn.addEventListener('click', (e) => {
