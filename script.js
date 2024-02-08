@@ -11,6 +11,7 @@ const enteredIp = document.querySelector('.input');
 const searchBtn = document.querySelector('#search-btn');
 const { L } = window;
 
+// Leaflet Docs help us in creating a map
 const map = L.map('map', {
   center: [51.505, -0.09],
   zoom: 13,
