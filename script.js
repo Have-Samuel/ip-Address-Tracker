@@ -75,5 +75,5 @@ searchBtn.addEventListener('click', (e) => {
     return;
   }
   alert('Please enter a valid IP address');
-  enteredIp.value = '';
+  // enteredIp.value = '';
 });
