@@ -13,8 +13,8 @@ const { L } = window;
 
 // Leaflet Docs help us in creating a map
 const map = L.map('map', {
-  center: [51.505, -0.09],
-  zoom: 13,
+  center: [0, 0],
+  zoom: 0,
   layers: [
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       // maxZoom: 19,
@@ -24,7 +24,7 @@ const map = L.map('map', {
 });
 
 // Makers for the map
-const marker = L.marker([51.505, -0.09]).addTo(map);
+// const marker = L.marker([51.505, -0.09]).addTo(map);
 
 // Function for the longitude and latitude when the user enters a location
 // when the page loads this function shd create a map with the user's location
