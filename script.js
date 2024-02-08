@@ -1,5 +1,5 @@
 // pull from different sources
-const apiUrl = 'https://geo.ipify.org/api/v2?apiKey=at_D2SmDOVIsbseigGDuGmJTpMle90Da';
+const apiUrl = 'https://geo.ipify.org/api/v2/country,city?apiKey=at_D2SmDOVIsbseigGDuGmJTpMle90Da&ipAddress=8.8.8.8';
 const apiKey = 'at_D2SmDOVIsbseigGDuGmJTpMle90Da';
 
 // Display of the Ip address, location and timezone of the user
@@ -47,7 +47,7 @@ const showLocation = (defaultIp) => {
     // display the data
     .then((data) => {
       currentIp.innerHTML = data.ip;
-      currentLocation.innerHTML = `${data.location.country} ${data}`;
+      currentLocation.innerHTML = `${data.location.city}, ${data.location.region}, ${data.location.postalCode}`;
       timeZone.innerHTML = `UTC ${data.location.timezone}`;
       isp.innerHTML = data.isp;
 
@@ -56,8 +56,8 @@ const showLocation = (defaultIp) => {
     })
     .catch((error) => console.log('Oops! Something went wrong', error));
 
-  circle();
-  marker();
+  // circle();
+  // marker();
 };
 // call the function that shows the Ip address, location and timezone of the user
 showLocation();
