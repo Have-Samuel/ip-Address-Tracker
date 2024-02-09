@@ -14,7 +14,7 @@ const { L } = window;
 // Leaflet Docs help us in creating a map
 const map = L.map('map', {
   center: [0, 0],
-  zoom: 0,
+  zoom: 13,
   layers: [
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       // maxZoom: 19,
@@ -23,22 +23,22 @@ const map = L.map('map', {
   ],
 });
 
-// Makers for the map
-const marker = L.marker([51.505, -0.09]).addTo(map);
-
-// Circle for the map
-const circle = L.circle([51.505, -0.09], {
-  color: 'red',
-  fillColor: '#f03',
-  fillOpacity: 0.5,
-  radius: 500,
-}).addTo(map);
-
 // Function for the longitude and latitude when the user enters a location
 // when the page loads this function shd create a map with the user's location
 const updateLoaction = (update_marker = [-42, 42]) => {
-  map.setView(update_marker, 19);
+  map.setView(update_marker, 13);
   L.marker(update_marker).addTo(map);
+
+  // Circle for the map
+  L.circle(update_marker, {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 100,
+  }).addTo(map);
+
+  // Marker for the map
+  L.marker([51.5, -0.09]).addTo(map);
 };
 
 // Function that shows the Ip address, location and timezone of the user
@@ -63,12 +63,9 @@ const showLocation = (defaultIp) => {
       updateLoaction([data.location.lat, data.location.lng]);
     })
     .catch((error) => console.log('Oops! Something went wrong', error));
-
-  circle();
-  marker();
 };
 // call the function that shows the Ip address, location and timezone of the user
-showLocation();
+showLocation(enteredIp.value);
 
 // When the page loads, the map should show the user's location
 document.addEventListener('load', updateLoaction());
@@ -77,11 +74,12 @@ document.addEventListener('load', updateLoaction());
 searchBtn.addEventListener('click', (e) => {
   e.preventDefault();
   showLocation(enteredIp.value);
+
   // if statement to check if the input is empty
-  if (enteredIp.value !== '' && enteredIp.value !== null) {
-    showLocation(enteredIp.value);
-    return;
-  }
-  alert('Please enter a valid IP address');
-  // enteredIp.value = '';
+  // if (enteredIp.value !== '' && enteredIp.value !== null) {
+  //   showLocation(enteredIp.value);
+  //   return;
+  // }
+  // alert('Please enter a valid IP address');
+  enteredIp.value = '';
 });
