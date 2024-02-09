@@ -63,9 +63,6 @@ const showLocation = (defaultIp) => {
       updateLoaction([data.location.lat, data.location.lng]);
     })
     .catch((error) => console.log('Oops! Something went wrong', error));
-
-  // circle();
-  // marker();
 };
 // call the function that shows the Ip address, location and timezone of the user
 showLocation(enteredIp.value);
