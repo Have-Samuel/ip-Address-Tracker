@@ -23,17 +23,6 @@ const map = L.map('map', {
   ],
 });
 
-// Makers for the map
-// const marker = L.marker([51.5, -0.09]).addTo(map);
-
-// // // Circle for the map
-// const circle = L.circle([51.508, -0.11], {
-//   color: 'red',
-//   fillColor: '#f03',
-//   fillOpacity: 0.5,
-//   radius: 500,
-// }).addTo(map);
-
 // Function for the longitude and latitude when the user enters a location
 // when the page loads this function shd create a map with the user's location
 const updateLoaction = (update_marker = [-42, 42]) => {
@@ -47,9 +36,9 @@ const updateLoaction = (update_marker = [-42, 42]) => {
     fillOpacity: 0.5,
     radius: 100,
   }).addTo(map);
-  // return update_marker;
+
+  // Marker for the map
   L.marker([51.5, -0.09]).addTo(map);
-  // L.marker(update_marker).addTo(map);
 };
 
 // Function that shows the Ip address, location and timezone of the user
