@@ -14,7 +14,7 @@ const { L } = window;
 // Leaflet Docs help us in creating a map
 const map = L.map('map', {
   center: [0, 0],
-  zoom: 0,
+  zoom: 13,
   layers: [
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       // maxZoom: 19,
@@ -26,7 +26,7 @@ const map = L.map('map', {
 // Makers for the map
 const marker = L.marker([51.505, -0.09]).addTo(map);
 
-// Circle for the map
+// // Circle for the map
 const circle = L.circle([51.505, -0.09], {
   color: 'red',
   fillColor: '#f03',
@@ -37,7 +37,7 @@ const circle = L.circle([51.505, -0.09], {
 // Function for the longitude and latitude when the user enters a location
 // when the page loads this function shd create a map with the user's location
 const updateLoaction = (update_marker = [-42, 42]) => {
-  map.setView(update_marker, 19);
+  map.setView(update_marker, 13);
   L.marker(update_marker).addTo(map);
 };
 
@@ -68,7 +68,7 @@ const showLocation = (defaultIp) => {
   marker();
 };
 // call the function that shows the Ip address, location and timezone of the user
-showLocation();
+showLocation(enteredIp.value);
 
 // When the page loads, the map should show the user's location
 document.addEventListener('load', updateLoaction());
@@ -83,5 +83,5 @@ searchBtn.addEventListener('click', (e) => {
     return;
   }
   alert('Please enter a valid IP address');
-  // enteredIp.value = '';
+  enteredIp.value = '';
 });
