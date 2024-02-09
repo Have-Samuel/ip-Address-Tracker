@@ -24,21 +24,32 @@ const map = L.map('map', {
 });
 
 // Makers for the map
-const marker = L.marker([51.5, -0.09]).addTo(map);
+// const marker = L.marker([51.5, -0.09]).addTo(map);
 
-// // Circle for the map
-const circle = L.circle([51.508, -0.11], {
-  color: 'red',
-  fillColor: '#f03',
-  fillOpacity: 0.5,
-  radius: 500,
-}).addTo(map);
+// // // Circle for the map
+// const circle = L.circle([51.508, -0.11], {
+//   color: 'red',
+//   fillColor: '#f03',
+//   fillOpacity: 0.5,
+//   radius: 500,
+// }).addTo(map);
 
 // Function for the longitude and latitude when the user enters a location
 // when the page loads this function shd create a map with the user's location
 const updateLoaction = (update_marker = [-42, 42]) => {
   map.setView(update_marker, 13);
   L.marker(update_marker).addTo(map);
+
+  // Circle for the map
+  L.circle(update_marker, {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5,
+    radius: 100,
+  }).addTo(map);
+  // return update_marker;
+  L.marker([51.5, -0.09]).addTo(map);
+  // L.marker(update_marker).addTo(map);
 };
 
 // Function that shows the Ip address, location and timezone of the user
@@ -64,8 +75,8 @@ const showLocation = (defaultIp) => {
     })
     .catch((error) => console.log('Oops! Something went wrong', error));
 
-  circle();
-  marker();
+  // circle();
+  // marker();
 };
 // call the function that shows the Ip address, location and timezone of the user
 showLocation(enteredIp.value);
@@ -79,10 +90,10 @@ searchBtn.addEventListener('click', (e) => {
   showLocation(enteredIp.value);
 
   // if statement to check if the input is empty
-  if (enteredIp.value !== '' && enteredIp.value !== null) {
-    showLocation(enteredIp.value);
-    return;
-  }
-  alert('Please enter a valid IP address');
+  // if (enteredIp.value !== '' && enteredIp.value !== null) {
+  //   showLocation(enteredIp.value);
+  //   return;
+  // }
+  // alert('Please enter a valid IP address');
   enteredIp.value = '';
 });
