@@ -24,10 +24,10 @@ const map = L.map('map', {
 });
 
 // Makers for the map
-const marker = L.marker([51.505, -0.09]).addTo(map);
+const marker = L.marker([51.5, -0.09]).addTo(map);
 
 // // Circle for the map
-const circle = L.circle([51.505, -0.09], {
+const circle = L.circle([51.508, -0.11], {
   color: 'red',
   fillColor: '#f03',
   fillOpacity: 0.5,
@@ -77,6 +77,7 @@ document.addEventListener('load', updateLoaction());
 searchBtn.addEventListener('click', (e) => {
   e.preventDefault();
   showLocation(enteredIp.value);
+
   // if statement to check if the input is empty
   if (enteredIp.value !== '' && enteredIp.value !== null) {
     showLocation(enteredIp.value);
