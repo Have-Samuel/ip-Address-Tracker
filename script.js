@@ -24,7 +24,7 @@ const map = L.map('map', {
 });
 
 // Makers for the map
-// const marker = L.marker([51.505, -0.09]).addTo(map);
+const marker = L.marker([51.505, -0.09]).addTo(map);
 
 // // Circle for the map
 const circle = L.circle([51.505, -0.09], {
