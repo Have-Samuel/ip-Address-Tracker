@@ -38,7 +38,9 @@ const updateLoaction = (update_marker = [-42, 42]) => {
   }).addTo(map);
 
   // Marker for the map
-  L.marker([51.5, -0.09]).addTo(map);
+  L.marker([51.5, -0.09], {
+    color: 'black',
+  }).addTo(map);
 };
 
 // Function that shows the Ip address, location and timezone of the user
