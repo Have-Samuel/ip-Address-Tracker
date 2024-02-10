@@ -219,7 +219,5 @@ span {
   .the-map {
     width: 100%;
     height: 670px;
-    background-image: url('./images/map.png');
-    background-repeat: no-repeat;
   }
 }
