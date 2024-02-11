@@ -25,7 +25,7 @@ const map = L.map('map', {
 
 // Function for the longitude and latitude when the user enters a location
 // when the page loads this function shd create a map with the user's location
-const updateLoaction = (update_marker = [-42, 42]) => {
+const updateLoaction = (update_marker = [0, 0]) => {
   map.setView(update_marker, 13);
   L.marker(update_marker).addTo(map);
 
@@ -38,7 +38,7 @@ const updateLoaction = (update_marker = [-42, 42]) => {
   }).addTo(map);
 
   // Marker for the map
-  L.marker([51.5, -0.09], {
+  L.marker([0, 0], {
     color: 'black',
   }).addTo(map);
 };
@@ -56,8 +56,9 @@ const showLocation = (defaultIp) => {
     .then((response) => response.json())
     // display the data
     .then((data) => {
+      console.log(data);
       currentIp.innerHTML = data.ip;
-      currentLocation.innerHTML = `${data.location.city}, ${data.location.country} ${data.location.region} ${data.location.postalCode}`;
+      currentLocation.innerHTML = `${data.location.city} ${data.location.country} ${data.location.region}`;
       timeZone.innerHTML = `UTC ${data.location.timezone}`;
       isp.innerHTML = data.isp;
 
