@@ -77,7 +77,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 327px;
-  height: 294px;
+  height: 350px;
   margin: 0 auto;
   margin-top: 30px;
   border-radius: 10px;
@@ -109,12 +109,12 @@ span {
 }
 
 .info p {
-  width: 100%;
+  width: 279px;
   text-align: center;
   font-size: 1.5rem;
   color: #2c2c2c;
   line-height: 1.5;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .attribution {
@@ -128,14 +128,20 @@ span {
   text-align: center;
 }
 
-.leaflet-bar {
-  position: relative;
+.leaflet-top .leaflet-control {
+  margin-top: 5rem;
+  margin-left: -0.5rem;
+  display: none;
 }
 
-.leaflet-bar a {
+/* .leaflet-bar {
+  position: relative;
+} */
+
+/* .leaflet-bar a {
   position: absolute;
-  /* top: 10rem; */
-}
+  top: 10rem;
+} */
 
 @media screen and (min-width: 768px) {
   body {
