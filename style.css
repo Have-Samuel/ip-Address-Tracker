@@ -128,8 +128,13 @@ span {
   text-align: center;
 }
 
+.leaflet-bar {
+  position: relative;
+}
+
 .leaflet-bar a {
-  padding-top: 4rem;
+  position: absolute;
+  /* top: 10rem; */
 }
 
 @media screen and (min-width: 768px) {
@@ -194,7 +199,8 @@ span {
     margin-left: auto;
     margin-right: auto;
     gap: 1rem;
-    z-index: 100;
+    /* z-index: 100; */
+    /* overflow: hidden; */
   }
 
   .info h2 {
