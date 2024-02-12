@@ -127,6 +127,7 @@ span {
   width: 375px;
   height: 600px;
   text-align: center;
+
 }
 
 .leaflet-top .leaflet-control {
@@ -134,15 +135,6 @@ span {
   margin-left: -0.5rem;
   display: none;
 }
-
-/* .leaflet-bar {
-  position: relative;
-} */
-
-/* .leaflet-bar a {
-  position: absolute;
-  top: 10rem;
-} */
 
 @media screen and (min-width: 768px) {
   body {
@@ -206,8 +198,6 @@ span {
     margin-left: auto;
     margin-right: auto;
     gap: 1rem;
-    /* z-index: 100; */
-    /* overflow: hidden; */
   }
 
   .info h2 {
