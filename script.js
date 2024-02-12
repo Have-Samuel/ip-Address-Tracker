@@ -77,12 +77,5 @@ document.addEventListener('load', updateLoaction());
 searchBtn.addEventListener('click', (e) => {
   e.preventDefault();
   showLocation(enteredIp.value);
-
-  // if statement to check if the input is empty
-  // if (enteredIp.value !== '' && enteredIp.value !== null) {
-  //   showLocation(enteredIp.value);
-  //   return;
-  // }
-  // alert('Please enter a valid IP address');
   enteredIp.value = '';
 });
