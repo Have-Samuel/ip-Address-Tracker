@@ -29,7 +29,6 @@ const updateLoaction = (update_marker = [0, 0]) => {
   map.setView(update_marker, 13);
   L.marker(update_marker).addTo(map);
 
-  // Circle for the map
   L.circle(update_marker, {
     color: 'red',
     fillColor: '#f03',
@@ -37,7 +36,6 @@ const updateLoaction = (update_marker = [0, 0]) => {
     radius: 100,
   }).addTo(map);
 
-  // Marker for the map
   L.marker([0, 0], {
     color: 'black',
   }).addTo(map);
@@ -54,7 +52,6 @@ const showLocation = (defaultIp) => {
   // fetch the data from the api
   fetch(ipUrl)
     .then((response) => response.json())
-    // display the data
     .then((data) => {
       console.log(data);
       currentIp.innerHTML = data.ip;
