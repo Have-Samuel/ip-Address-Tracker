@@ -78,6 +78,7 @@ body {
   width: 327px;
   height: 350px;
   margin: 0 auto;
+  padding-top: 2rem;
   margin-top: 30px;
   border-radius: 10px;
   background-color: #fff;
@@ -109,7 +110,6 @@ span {
 
 .info p {
   width: 279px;
-  height: 61px;
   text-align: center;
   font-size: 1.5rem;
   color: #2c2c2c;
