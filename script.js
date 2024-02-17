@@ -62,7 +62,8 @@ const showLocation = (defaultIp) => {
       // update the map with the user's location
       updateLoaction([data.location.lat, data.location.lng]);
     })
-    .catch((error) => error);
+    // eslint-disable-next-line no-console
+    .catch((error) => console.log('Oops! Something went wrong', error));
 };
 // call the function that shows the Ip address, location and timezone of the user
 showLocation(enteredIp.value);
