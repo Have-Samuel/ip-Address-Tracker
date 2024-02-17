@@ -46,7 +46,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 - [Github](https://github.com/Have-Samuel/ip-Address-Tracker)
 - [Frontend Mentor](https://www.frontendmentor.io/profile/Have-Samuel)
-- [Live Link]()
+- [Live Link](https://have-samuel.github.io/ip-Address-Tracker/)
 
 ## My process
 
