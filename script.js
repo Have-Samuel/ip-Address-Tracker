@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 // pull from different sources
 const apiUrl = 'https://geo.ipify.org/api/v2/country,city?apiKey=at_D2SmDOVIsbseigGDuGmJTpMle90Da&ipAddress=8.8.8.8';
 const apiKey = 'at_D2SmDOVIsbseigGDuGmJTpMle90Da';
