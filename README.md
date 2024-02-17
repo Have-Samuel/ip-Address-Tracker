@@ -70,6 +70,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - [@Have-Samuel](https://www.frontendmentor.io/profile/Have-Samuel)
 - [@samhave1](https://twitter.com/samhave1)
 - [LinkedIn](https://www.linkedin.com/in/have-samuel/)
+
 ## 🤝 Contributions
 
 Contributions, issues, and feature requests are welcome!
