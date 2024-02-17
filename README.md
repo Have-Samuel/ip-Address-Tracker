@@ -63,7 +63,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Useful resources
 
 - [Resource 1](https://geo.ipify.org/docs) - This helped me Collect data for my App display. I really liked this pattern and will use it going forward.
-- [Resource 2](LeafletJS) - This is an amazing article which helped me finally understand how the Maps and other features are displayed on the map while searching for the IP address. I'd recommend it to anyone still learning this concept.
+- [Resource 2](LeafletJS) - This is an amazing article which helped me finally understand how the Maps and other features are displayed on the map while searching for the IP address. (`var marker = L.marker([51.5, -0.09]).addTo(map);`, `Circle`, `Polygons`) I'd recommend it to anyone still learning this concept.
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
