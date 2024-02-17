@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- [Github](https://github.com/Have-Samuel/ip-Address-Tracker)
+- [Github]()
 - [Frontend Mentor](https://www.frontendmentor.io/profile/Have-Samuel)
 - [Live Link](https://have-samuel.github.io/ip-Address-Tracker/)
 
