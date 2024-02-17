@@ -53,16 +53,16 @@ const showLocation = (defaultIp) => {
   fetch(ipUrl)
     .then((response) => response.json())
     .then((data) => {
-      // console.log(data);
+      console.log(data);
       currentIp.innerHTML = data.ip;
-      currentLocation.innerHTML = `${data.location.city} ${data.location.country} ${data.location.region}`;
+      currentLocation.innerHTML = `${data.location.city} ${data.location.region} ${data.location.postalCode}`;
       timeZone.innerHTML = `UTC ${data.location.timezone}`;
       isp.innerHTML = data.isp;
 
       // update the map with the user's location
       updateLoaction([data.location.lat, data.location.lng]);
     })
-    .catch((error) => error.message);
+    .catch((error) => console.log('Oops!, Wrong IP address', error));
 };
 // call the function that shows the Ip address, location and timezone of the user
 showLocation(enteredIp.value);
