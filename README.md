@@ -65,18 +65,27 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - [Resource 1](https://geo.ipify.org/docs) - This helped me Collect data for my App display. I really liked this pattern and will use it going forward.
 - [Resource 2](LeafletJS) - This is an amazing article which helped me finally understand how the Maps and other features are displayed on the map while searching for the IP address. (`var marker = L.marker([51.5, -0.09]).addTo(map);`, `Circle`, `Polygons`) I'd recommend it to anyone still learning this concept.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
-
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- [@Have-Samuel](https://www.frontendmentor.io/profile/Have-Samuel)
+- [@samhave1](https://twitter.com/samhave1)
+- [LinkedIn](https://www.linkedin.com/in/have-samuel/)
+## 🤝 Contributions
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Have-Samuel/ip-Address-Tracker/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+- 🎉 Thanks to Frontend Mentor
+- 👋 Thumbs Up to [@Trekab](https://github.com/trekab)
+- etc
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
