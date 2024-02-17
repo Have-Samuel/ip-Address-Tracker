@@ -57,9 +57,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- [API](https://geo.ipify.org/docs)
+- [MAP GENERATOR](LeafletJS)
 
 *Note: These are just examples. Delete this note and replace the list above with your own choices**
 
