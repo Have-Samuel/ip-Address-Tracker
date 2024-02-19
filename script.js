@@ -2,7 +2,6 @@
 const apiUrl = 'https://geo.ipify.org/api/v2/country,city?apiKey=at_D2SmDOVIsbseigGDuGmJTpMle90Da&ipAddress=8.8.8.8';
 const apiKey = 'at_D2SmDOVIsbseigGDuGmJTpMle90Da';
 
-// Display of the Ip address, location and timezone of the user
 const currentIp = document.querySelector('#ip-address');
 const currentLocation = document.querySelector('#ip-location');
 const timeZone = document.querySelector('#ip-timezone');
